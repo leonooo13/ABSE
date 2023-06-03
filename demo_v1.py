@@ -9,31 +9,32 @@ class AttributeEncryption:
     def encrypt(self, plaintext, attributes):
         # Convert the attributes to a string
         attr_str = str(attributes)
-
         # Hash the attributes to get a fixed-length key
         attr_key = SHA256.new(attr_str.encode()).digest()
-
         # Use the attribute key to encrypt the plaintext
         cipher = AES.new(attr_key, AES.MODE_CBC)
         iv = cipher.iv
         ciphertext = cipher.encrypt(pad(plaintext.encode(), AES.block_size))
-
         # Return the ciphertext, IV, and attributes
         return (ciphertext, iv, attributes)
-
     def decrypt(self, ciphertext, iv, attributes):
         # Convert the attributes to a string
         attr_str = str(attributes)
-
         # Hash the attributes to get a fixed-length key
         attr_key = SHA256.new(attr_str.encode()).digest()
-
         # Use the attribute key to decrypt the ciphertext
         cipher = AES.new(attr_key, AES.MODE_CBC, iv)
         plaintext = unpad(cipher.decrypt(ciphertext), AES.block_size)
-
         # Return the plaintext
         return plaintext.decode()
+# 设置访问策略
+def access(attributes,limit):
+    if limit=="doctor":
+        #可以获取到所有属性，利用这些属性进行解密
+        pass
+    elif  limit=="nurse":
+        # 获取到姓名
+        pass
 # Create an instance of AttributeEncryption with a random key
 key = get_random_bytes(16)
 key1=get_random_bytes(4)

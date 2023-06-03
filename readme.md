@@ -1,13 +1,15 @@
-# 如何设计一个基于属性的可搜索加密方案
-1. 属性加密
-2. 可搜索加密
-Q:如何存储用户属性
-Q:属性和加密如何结合
-Q:我使用属性作为密钥将用户的信息加密后，存储到云端，是这样吗？
-Q:hash函数如何与加密后的消息进行结合
-## 属性加密
-1. 将属性转成字符串，进行hash值生成attr_key
-2. 使用`cipher=AES.new(attr_key, AES.MODE_CBC)`,`cipher = cipher.encrypt(pad(plaintext.encode(), AES.block_size))`进行加密，也可以返回iv初始向量
-3. 解密与上面一样
+# ABSE demo with UI
+> CPabe ,Inveted Index ,Serachable encryption
+> 
+` python ` 文件可以帮助理解abe的流程
 
+`jar `文件是使用jPBC里面的双线性对的运算，来完成ABE的算法，方案采用的是`CPABE ` and `InvertedIndex`来完成搜索加密，
+
+1. this way with CPABE encodes the key of aes,abe can encode the files of onwers which way is quicky and easy,CPabe also decode the InvertedIndex(W,[f1,f2,f3])
+2. the key of this design is how to match the word of owner with the word1 of user
+3. how to prove the safety of this program,maby math
+## how to use it?
+your pc shoud install Java 14(14 is ok in my pc),run it in termainal ` java -jar ABSEUI.jar` 
+## about the source code
+I will open the code after the report  
 
