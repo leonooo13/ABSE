@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ABSE demo with UI
 > CPabe ,Inveted Index ,Serachable encryption
 > 
@@ -61,4 +60,3 @@ setting: Pairing
 6. 生成私钥 keygen(pk,mk,属性)
 6. e(mk,msg,访问树)
 7. d(mk,sk,cipher)
->>>>>>> ec2aa384e76bc7b00636e123fa898ca15436d942
