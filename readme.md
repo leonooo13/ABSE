@@ -60,3 +60,11 @@ setting: Pairing
 6. 生成私钥 keygen(pk,mk,属性)
 6. e(mk,msg,访问树)
 7. d(mk,sk,cipher)
+![image](https://github.com/user-attachments/assets/0029a52b-1c8f-4c01-8b1e-baf687e2783b)
+![image](https://github.com/user-attachments/assets/28821f2c-adf2-4654-b24d-93b46fa7b347)
+![image](https://github.com/user-attachments/assets/7bd606c6-d280-4445-8e1f-5699a2c820ff)
+![image](https://github.com/user-attachments/assets/ba9db26e-088e-4ddb-806d-cbbf0ef08a62)
+![image](https://github.com/user-attachments/assets/55d6be78-ea07-4f59-9388-0fac0541e257)
+![image](https://github.com/user-attachments/assets/f180fe8a-4e6e-4265-9dec-8372d4c07aec)
+
+
